@@ -23,6 +23,7 @@ RUN cd catkin_ws/src/ros_caffe && \
 # add launches for running ros_caffe only and ros_caffe + webcam + viewer
 ADD ros_caffe.launch /root/catkin_ws/src/ros_caffe/launch/ros_caffe.launch
 ADD ros_caffe_webcam_uvc.launch /root/catkin_ws/src/ros_caffe/launch/ros_caffe_webcam_uvc.launch
+ADD test_webcam.bag /root/catkin_ws/src/
 
 # build ros_caffe package
 RUN cd catkin_ws/src/ros_caffe/ && \
